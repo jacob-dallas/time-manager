@@ -1,6 +1,10 @@
 import sqlite3
+import sys
 
-connection = sqlite3.connect('test')
+
+filename = sys.argv[1]
+
+connection = sqlite3.connect(filename)
 
 connection.commit()
 
