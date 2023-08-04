@@ -7,6 +7,8 @@ function Add-Log {
     param (
         $activity
     )
+    $project_name = (get-item .).fullname
+    Invoke-Python "$PSScriptRoot\lib\login.py" "$PSScriptRoot $project_name"
 }
 function End-Log {
     param (

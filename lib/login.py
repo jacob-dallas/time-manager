@@ -8,7 +8,7 @@ activity = sys.argv[2]
 
 #get project id by name
 time = datetime.datetime.now()
-time.date
+
 activity = input('What activity are you doing today?')
 
 connection = sqlite3.connect(log)
